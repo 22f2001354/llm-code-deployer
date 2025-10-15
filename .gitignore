@@ -1,0 +1,26 @@
+# Python environment
+venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# VS Code settings
+.vscode/
+
+# Ignore temporary app folder only if you want to regenerate it locally
+# Uncomment if you don't want temp_app in the repo
+# temp_app/
+
+# Ignore other IDE/project files
+.idea/
+*.sublime-project
+*.sublime-workspace
