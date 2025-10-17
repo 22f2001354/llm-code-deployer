@@ -10,6 +10,7 @@ from app.github_utils import (
 )
 from app.notify import notify_evaluation_server
 from app.github_utils import create_or_update_binary_file
+import time
 
 load_dotenv()
 USER_SECRET = os.getenv("USER_SECRET")
@@ -119,7 +120,7 @@ def process_request(data):
         "commit_sha": commit_sha,
         "pages_url": pages_url,
     }
-
+    time.sleep(180)
     notify_evaluation_server(data["evaluation_url"], payload)
 
     processed = load_processed()
