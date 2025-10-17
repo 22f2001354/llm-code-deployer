@@ -144,7 +144,7 @@ You are a professional web developer assistant.
 
     try:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-5",
             messages=[
                 {"role": "system", "content": "You are a helpful coding assistant that outputs runnable web apps."},
                 {"role": "user", "content": user_prompt}
